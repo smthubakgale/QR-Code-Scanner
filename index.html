@@ -1,0 +1,102 @@
+<!-- saved from url=(0018)https://webqr.com/ -->
+
+<html>
+
+<head>
+    
+
+    <style type="text/css">
+          
+        #imghelp {
+            position: relative;
+            left: 0px;
+            top: -160px;
+            z-index: 100;
+            font: 18px arial,sans-serif;
+            background: #f0f0f0;
+            margin-left: 35px;
+            margin-right: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            display:none;
+        }
+
+        #v {
+            width: 320px;
+            height: 240px;
+        }
+
+
+        #outdiv {
+            width: 320px;
+            height: 240px;
+            border: solid;
+            border-width: 3px 3px 3px 3px;
+        }
+
+        #result {
+            border: solid;
+            border-width: 1px 1px 1px 1px;
+            padding: 20px;
+            width: 70%;
+        }
+    </style>
+
+     
+    <script type="text/javascript" async="" src="ga.js">
+    </script>
+     
+    <script type="text/javascript" src="llqrcode.js">
+    </script>
+ 
+
+    <script type="text/javascript" src="webqr.js">
+    </script>
+
+    
+</head>
+
+
+
+<body>
+
+
+    <div>
+
+        <div style="width:340px; margin:auto;">
+            <div style="display:flex; width:100%;">
+
+                <div>
+                    <img class="selector" id="webcamimg" src="vid.png" onclick="setwebcam()" align="left" style="opacity: 1;">
+                </div>
+                <div style="flex:1;"></div>
+                <div>
+                    <img class="selector" id="qrimg" src="cam.png" onclick="setimg()" align="right" style="opacity: 0.2;">
+                </div>
+            </div>
+
+            <div>
+                <div id="outdiv">
+                    <video id="v" autoplay=""></video>
+                </div>
+            </div>
+        </div>
+        <div id="result" style="width:350px; margin:auto;">
+        </div>
+
+        <div id="mainbody" style="display: inline;"> 
+            <script async="" src="f.txt"> </script> 
+        </div>
+
+
+    </div>
+    <canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px; display:none;"></canvas>
+
+    <script type="text/javascript"> load();
+    </script>
+
+
+
+</body>
+</html>
